@@ -1,1 +1,79 @@
+1. Why are functions advantageous to have in your programs?
+Ans:-
+With writing function we can reuse code in program and we can more oftenly write clear code and we can break in small pices instead of writing 
+big complex code or program.
+
+2. When does the code in a function run: when it's specified or when it's called?
+Ans:-
+Function runs when it is called on needs , specification does not mean you are asking function to work .
+
+3. What statement creates a function?
+Ans:-
+when we are writing function we can use def to define a function and then we can given our desired name for function after def.
+
+4. What is the difference between a function and a function call?
+Ans:-
+Function is pice of defined code written for certain objective while function call is process to run function for desired output.
+
+5. How many global scopes are there in a Python program? How many local scopes?
+Ans:-
+There are only once global scope in python program , and each function's definition creats new local scopes so there can be many local scopes in python.
+
+6. What happens to variables in a local scope when the function call returns?
+Ans:-
+Variable in local scopes in python are destroyed when function calls return , and are not acesible anymore. beacuse python uses garbeg collector to automatically reclaim 
+memory used by objects , that are no longer accible in program.
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+Ans:-
+return is value provide to caller by a function when it erminates .it is output of the function and can be assigned to a variable or used in an expression.
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+Ans:-
+If there is no return value paython returns none value automatically , when a function terminates without executing return statement , python automatically 
+returns that no value has been returned
+
+9. How do you make a function variable refer to the global variable?
+Ans:-
+To make a global variable refer to a function we can use we can use global variable before variable name as:-
+
+x=10
+def fofa():
+    global x
+    x=20
+    print("Inside function:",x)
+    
+print("Before function call",x)
+fofa()
+print("After function call",x)
+
+10. What is the data type of None?
+Ans:-
+Data type of none in python is Nonetype.
+
+
+11. What does the sentence import areallyourpetsnamederic do?
+Ans:-
+import areallyourpetsnamederic , try to import a module named areallyourpetsnamederic , but if there is such module it will raise import error.
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+Ans:-
+If you have bacon() function in spam mpdule you can call it by usine below code 
+
+import spam
+spam.bacon()
+
+13. What can you do to save a programme from crashing if it encounters an error?
+Ans:-
+In python there there is way to handle errors as well , we can handle errors by using try and except methos as below.
+
+try:
+(#we can write function or program that might have some error)
+except Exception as e:
+("this will be your output of error occured")
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+Ans:-
+try cluse eclosed the code that might raised exception.
+except cluse handle the errors and exception the caused to be a smoooth running of program instead of creashing by an error of exception/
 
